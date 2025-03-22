@@ -1,0 +1,251 @@
+/* ======= Global Styling ======= */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ======= Navbar Styling ======= */
+nav {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+/* ======= Header Styling ======= */
+.about-header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.about-header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* ======= Profil Tim ======= */
+.team-profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.team-profile .member {
+  text-align: center;
+  max-width: 280px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-profile .member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.team-profile .member img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-profile .member img:hover {
+  transform: scale(1.1);
+}
+
+.team-profile .member h3 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+.team-profile .member p {
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+/* ======= Efek Hover untuk Member ======= */
+.team-profile .member::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #007bff, #6610f2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: height 0.3s ease-in-out;
+}
+
+.team-profile .member:hover::after {
+  height: 10px;
+}
+
+/* ======= Bagian Proyek ======= */
+.projects {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+}
+
+.projects h2 {
+  font-size: 2.4em;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project {
+  max-width: 300px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  font-size: 1.4em;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.project p {
+  font-size: 1em;
+  opacity: 0.9;
+}
+
+/* ======= Footer ======= */
+footer {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* ======= Animasi Masuk ======= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= Responsif ======= */
+@media (max-width: 768px) {
+  .about-header {
+    padding: 60px 20px;
+  }
+
+  .about-header h1 {
+    font-size: 2.2em;
+  }
+
+  .team-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-profile .member {
+    max-width: 90%;
+  }
+
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .project {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about-header h1 {
+    font-size: 2em;
+  }
+
+  .projects h2 {
+    font-size: 2em;
+  }
+}

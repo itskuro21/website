@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <style>
+    /* ======= General Styles ======= */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #f0f0f0, #d9e3f0);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ======= Navbar ======= */
+    nav {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ffffff;
+    }
+
+    /* ======= Contact Section ======= */
+    .contact-container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .info-item {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      min-width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-item i {
+      font-size: 30px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .info-item h2 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .info-item p a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .info-item p a:hover {
+      color: #007bff;
+    }
+
+    /* ======= Formulir Kontak ======= */
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    .contact-form label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: linear-gradient(135deg, #0056b3, #520dc2);
+    }
+
+    /* ======= Responsif ======= */
+    @media (max-width: 768px) {
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-item {
+        width: 90%;
+      }
+
+      .contact-form {
+        width: 90%;
+      }
+    }
+
+    /* ======= Footer ======= */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-container">
+      <h1>Contact Me</h1>
+      <p>Silakan hubungi kami melalui informasi di bawah ini!</p>
+
+      <section class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <h2>Email</h2>
+          <p>
+            <a href="mailto:dwiriska819@gmail.com">dwiriska819@gmail.com</a>
+          </p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <h2>Phone</h2>
+          <p><a href="tel:+6282340146536">+62 823 4014 6536</a></p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h2>Address</h2>
+          <p>Jalan Karantina Baru, Tolotongga, Kota Bima</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-share-alt"></i>
+          <h2>Follow Me</h2>
+          <p>
+            <a href="#" target="_blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            |
+            <a href="#" target="_blank"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+            |
+            <a href="#" target="_blank"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="#" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

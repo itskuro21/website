@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="main-content">
+      <header>
+        <h1>Selamat Datang Di Portfolio Kami</h1>
+        <p>Kenali Individu Luar Biasa Dari Tim Kami</p>
+      </header>
+
+      <section class="team">
+        <div class="member" onclick="showProfile('riska', 'riska.jpg')">
+          <img src="riska.jpg" alt="Riska Dwi R." class="profile-pic" />
+          <h2>Riska Dwi R.</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="member" onclick="showProfile('iis', 'iis.jpeg')">
+          <img src="iis.jpeg" alt="Iis Muzdalifah" class="profile-pic" />
+          <h2>Iis Muzdalifah</h2>
+          <p>Designer</p>
+        </div>
+        <div class="member" onclick="showProfile('amar', 'amar.jpg')">
+          <img src="amar.jpg" alt="Amar Yusnain" class="profile-pic" />
+          <h2>Amar Yusnain</h2>
+          <p>Content Writer</p>
+        </div>
+        <div class="member" onclick="showProfile('haikal', 'haikal.jpeg')">
+          <img src="haikal.jpeg" alt="M. Haikal" class="profile-pic" />
+          <h2>M. Haikal</h2>
+          <p>Debugging</p>
+        </div>
+        <div class="member" onclick="showProfile('Muslim', 'muslim.jpeg')">
+          <img src="muslim.jpeg" alt="Bukhari Muslim" class="profile-pic" />
+          <h2>Bukhari Muslim</h2>
+          <p>Analisis</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Profil Detail (Awalnya disembunyikan) -->
+    <div id="profile-content" class="hidden">
+      <button onclick="backToMain()">Back</button>
+      <div id="profile-info"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
